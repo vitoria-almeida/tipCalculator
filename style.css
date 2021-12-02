@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@200;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+    font-family: 'M PLUS 1 Code', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    line-height: 2.0;
+}
+
+main {
+    width: 700px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 20px; 
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainDiv {
+    width: 47%;
+    height: 90%;
+    padding: 0 30px;
+    border-radius: 20px; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+#billValueInput, #peopleInput {
+    background-color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+#billValueInput input, #peopleInput input {
+    text-align: right;
+    width: 200px;
+
+    font-family: 'M PLUS 1 Code', sans-serif;
+    font-size: 20px;
+    color: blue;
+    font-weight: 400;
+}
+
+/* estilizar placeholder */
+::placeholder {
+    font-family: 'M PLUS 1 Code', sans-serif;
+    font-size: 20px;
+    color: black;
+} 
+
+/* estilizar input */
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+/* estilizar seta do type number */
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;  
+}
+
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+
+
+#selectTip {
+    margin: 18px 0 5px 0;
+}
+
+#tipValuesInput {
+    display: grid;
+    grid: repeat(2, 50px) / auto-flow 93px;   
+}
+
+#tipValuesInput div {
+    background-color: white;
+
+    width: 80px;
+    height: 40px;
+    border-radius: 3px; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+#divRight div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#divRight h4 {
+    line-height: 1.2;
+
+}
+    #divRight span {
+        
+    }
+
+#divRight h5 {
+   font-size: 30px; 
+}
+
+#divRight button {
+    margin-top: 120px;
+    width: 120px;
+
+    padding: 5px 10px;
+    border-radius: 3px;
+
+    background-color: white;
+    font-size: 18px;
+    padding: 6px 0;
+    font-weight: 500;
+}
+
+#divRight button:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+

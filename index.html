@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tip Calculator</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <main>
+            <div class="mainDiv" id="divLeft" style="background-color: rgb(255, 246, 116);">
+                <div id="billValue">
+                    <h3>Bill</h3>
+                    <div id="billValueInput">
+                        <p>R$</p>
+                        <input placeholder="0.0" type="number" id="bill_Amount" value="">
+                    </div>
+                </div>
+
+                <div id="selectTip">
+                    <h3>Select Tip %</h3>
+                    <div id="tipValuesInput">
+                        <div id="percentage_5">5%</div>
+                        <div id="percentage_25">25%</div>
+                        <div id="percentage_10">10%</div>
+                        <div id="percentage_50">50%</div>
+                        <div id="percentage_15">15%</div>
+                        <div id="percentage_100">100%</div>
+                    </div>
+                </div>
+
+                <div id="billValue">
+                    <h3>Number of People</h3>
+                    <div id="peopleInput">
+                        <p>R$</p>
+                        <input placeholder="0" type="number" id="total_Person">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mainDiv" id="divRight" style="background-color: rgb(107, 211, 188);">
+                <div>
+                    <h4>Tip Amount <br><span>/ person</span></h4>
+                    <h5 id="tipAmountPerson">R$0.0</h5>
+                </div>
+
+                <div>
+                    <h4>Total <br><span>/ person</span></h4>
+                    <h5 id="totalPerson">R$0.0</h5>
+                </div>
+
+                <div>
+                    <button type="button" id="calculate_btn">CALCULATE</button>
+                    <button type="button" onclick="location.reload()">RESET</button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
