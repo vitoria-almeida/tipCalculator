@@ -11,7 +11,7 @@
 
     <body>
         <main>
-            <div class="mainDiv" id="divLeft" style="background-color: rgb(255, 246, 116);">
+            <div class="mainDiv" id="divLeft">
                 <div id="billValue">
                     <h3>Bill</h3>
                     <div id="billValueInput">
@@ -36,12 +36,14 @@
                     <h3>Number of People</h3>
                     <div id="peopleInput">
                         <p>R$</p>
-                        <input placeholder="0" type="number" id="total_Person">
+                        <input placeholder="0" type="number" id="total_Person"
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)"
+                        maxlength="2">
                     </div>
                 </div>
             </div>
 
-            <div class="mainDiv" id="divRight" style="background-color: rgb(107, 211, 188);">
+            <div class="mainDiv" id="divRight">
                 <div>
                     <h4>Tip Amount <br><span>/ person</span></h4>
                     <h5 id="tipAmountPerson">R$0.0</h5>
@@ -51,11 +53,8 @@
                     <h4>Total <br><span>/ person</span></h4>
                     <h5 id="totalPerson">R$0.0</h5>
                 </div>
-
-                <div>
-                    <button type="button" id="calculate_btn">CALCULATE</button>
-                    <button type="button" onclick="location.reload()">RESET</button>
-                </div>
+                   
+                <button type="button" onclick="location.reload()">RESET</button>                
             </div>
         </main>
     </body>
