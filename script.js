@@ -16,7 +16,13 @@ percentage5.addEventListener('click', function(){
     if (totalPerson.value < 1) {
         alert('Preecha a quantidade de pessoas!')
     } else {
-        percentage5.style.backgroundColor = 'red'
+        percentage5.style.backgroundColor = '#28C1AD';
+        percentage10.style.backgroundColor = '#00474B';
+        percentage15.style.backgroundColor = '#00474B';
+        percentage25.style.backgroundColor = '#00474B';
+        percentage50.style.backgroundColor = '#00474B';
+        percentage100.style.backgroundColor = '#00474B';
+        
 
         totalTip5 = 5 * billAmount.value / 100 
         totalTip5Person = totalTip5 / totalPerson.value
@@ -31,7 +37,12 @@ percentage10.addEventListener('click', function(){
     if (totalPerson.value < 1) {
         alert('Preecha a quantidade de pessoas!')
     } else {
+        percentage5.style.backgroundColor = '#00474B';
         percentage10.style.backgroundColor = '#28C1AD';
+        percentage15.style.backgroundColor = '#00474B';
+        percentage25.style.backgroundColor = '#00474B';
+        percentage50.style.backgroundColor = '#00474B';
+        percentage100.style.backgroundColor = '#00474B';
 
         totalTip10 = 10 * billAmount.value / 100 
         totalTip10Person = totalTip10 / totalPerson.value
@@ -46,7 +57,12 @@ percentage15.addEventListener('click', function(){
     if (totalPerson.value < 1) {
         alert('Preecha a quantidade de pessoas!')
     } else {
-        percentage15.style.backgroundColor = 'green'
+        percentage5.style.backgroundColor = '#00474B';
+        percentage10.style.backgroundColor = '#00474B';
+        percentage15.style.backgroundColor = '#28C1AD';
+        percentage25.style.backgroundColor = '#00474B';
+        percentage50.style.backgroundColor = '#00474B';
+        percentage100.style.backgroundColor = '#00474B';
 
         totalTip15 = 15 * billAmount.value / 100 
         totalTip15Person = totalTip15 / totalPerson.value
@@ -61,7 +77,12 @@ percentage25.addEventListener('click', function(){
     if (totalPerson.value < 1) {
         alert('Preecha a quantidade de pessoas!')
     } else {
-        percentage25.style.backgroundColor = 'green'
+        percentage5.style.backgroundColor = '#00474B';
+        percentage10.style.backgroundColor = '#00474B';
+        percentage15.style.backgroundColor = '#00474B';
+        percentage25.style.backgroundColor = '#28C1AD';
+        percentage50.style.backgroundColor = '#00474B';
+        percentage100.style.backgroundColor = '#00474B';
 
         totalTip25 = 25 * billAmount.value / 100 
         totalTip25Person = totalTip25 / totalPerson.value
@@ -76,7 +97,12 @@ percentage50.addEventListener('click', function(){
     if (totalPerson.value < 1) {
         alert('Preecha a quantidade de pessoas!')
     } else {
-        percentage50.style.backgroundColor = 'green'
+        percentage5.style.backgroundColor = '#00474B';
+        percentage10.style.backgroundColor = '#00474B';
+        percentage15.style.backgroundColor = '#00474B';
+        percentage25.style.backgroundColor = '#00474B';
+        percentage50.style.backgroundColor = '#28C1AD';
+        percentage100.style.backgroundColor = '#00474B';
 
         totalTip50 = 50 * billAmount.value / 100 
         totalTip50Person = totalTip50 / totalPerson.value
@@ -91,7 +117,12 @@ percentage100.addEventListener('click', function(){
     if (totalPerson.value < 1) {
         alert('Preecha a quantidade de pessoas!')
     } else {
-        percentage100.style.backgroundColor = 'green'
+        percentage5.style.backgroundColor = '#00474B';
+        percentage10.style.backgroundColor = '#00474B';
+        percentage15.style.backgroundColor = '#00474B';
+        percentage25.style.backgroundColor = '#00474B';
+        percentage50.style.backgroundColor = '#00474B';
+        percentage100.style.backgroundColor = '#28C1AD';
 
         totalTip100 = 100 * billAmount.value / 100 
         totalTip100Person = totalTip100 / totalPerson.value

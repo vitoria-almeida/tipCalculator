@@ -19,6 +19,7 @@
 
 
 
+
 /* ALL */
 body {
     width: 100%;
@@ -55,7 +56,6 @@ main {
     flex-direction: column;
     justify-content: center;
 }
-
 
 
 
@@ -110,7 +110,6 @@ main {
 
 
 
-
 /* LEFT CONTENT */
 #divLeft h3 {
     font-size: 18px;
@@ -146,20 +145,20 @@ main {
     color: var(--grey);
 }
 
-/* estilizar placeholder */
+    /* to style placeholder */
 ::placeholder {
     font-size: 23px;
     color: var(--darkGreen);
 } 
 
-/* estilizar input */
+    /* to take the border out of the input */
 textarea:focus, input:focus, select:focus {
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0;
 } 
 
-/* estilizar seta do type number */
+    /* to take the arrows out of the type number */
 input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none;  
 }
@@ -196,3 +195,89 @@ input[type=number] {
 #tipValuesInput div:hover {
     cursor: pointer;
 }
+
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 780px) {
+   main {
+       display: flex;
+       flex-direction: column;
+       width: 400px;
+       height: 600px;
+   }
+
+   .mainDiv {
+       width: 400px;
+   }
+
+   #divLeft {
+       margin-top: 20px;
+       margin-bottom: 20px;
+   }
+   
+   #divRight {
+       border-radius: 0 0px 20px 20px;
+   }
+
+   #divRight button {
+        margin-top: 30px;
+   }
+
+   #tipValuesInput {
+        grid: repeat(2, 50px) / auto-flow 120px;    
+   }
+
+   #tipValuesInput div {
+        width: 100px;
+   }
+}
+
+@media (max-width: 450px) {
+    main {
+        width: 300px;
+    }
+
+    .mainDiv {
+        width: 300px;
+    }
+
+    #tipValuesInput {
+        grid: repeat(2, 50px) / auto-flow 86px;    
+    }
+    
+    #tipValuesInput div {
+        width: 70px;
+    }
+
+    #divRight h5 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 350px){
+    main {
+        width: 250px;
+    }
+
+    .mainDiv {
+        width: 250px;
+    }
+
+    #tipValuesInput {
+        grid: repeat(2, 50px) / auto-flow 65px;    
+    }
+    
+    #tipValuesInput div {
+        width: 60px;
+    }
+
+    #divRight h4 {
+        font-size: 13px;
+    }
+    #divRight h5 {
+        font-size: 25px;
+    }
+}
+
