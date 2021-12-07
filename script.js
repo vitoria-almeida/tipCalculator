@@ -14,8 +14,12 @@ let totalperson = document.getElementById('totalPerson')
 
 percentage5.addEventListener('click', function(){
     if (totalPerson.value < 1) {
-        alert('Preecha a quantidade de pessoas!')
+        peopleInput.style.border = '2px red solid'
+        empty_error_msg.innerHTML = 'this item can not be empty'
     } else {
+        peopleInput.style.border = 'none'
+        empty_error_msg.innerHTML = ''
+
         percentage5.style.backgroundColor = '#28C1AD';
         percentage10.style.backgroundColor = '#00474B';
         percentage15.style.backgroundColor = '#00474B';
@@ -35,8 +39,12 @@ percentage5.addEventListener('click', function(){
 
 percentage10.addEventListener('click', function(){
     if (totalPerson.value < 1) {
-        alert('Preecha a quantidade de pessoas!')
+        peopleInput.style.border = '2px red solid'
+        empty_error_msg.innerHTML = 'this item can not be empty'
     } else {
+        peopleInput.style.border = 'none'
+        empty_error_msg.innerHTML = ''
+
         percentage5.style.backgroundColor = '#00474B';
         percentage10.style.backgroundColor = '#28C1AD';
         percentage15.style.backgroundColor = '#00474B';
@@ -55,8 +63,12 @@ percentage10.addEventListener('click', function(){
 
 percentage15.addEventListener('click', function(){
     if (totalPerson.value < 1) {
-        alert('Preecha a quantidade de pessoas!')
+        peopleInput.style.border = '2px red solid'
+        empty_error_msg.innerHTML = 'this item can not be empty'
     } else {
+        peopleInput.style.border = 'none'
+        empty_error_msg.innerHTML = ''
+
         percentage5.style.backgroundColor = '#00474B';
         percentage10.style.backgroundColor = '#00474B';
         percentage15.style.backgroundColor = '#28C1AD';
@@ -75,8 +87,12 @@ percentage15.addEventListener('click', function(){
 
 percentage25.addEventListener('click', function(){
     if (totalPerson.value < 1) {
-        alert('Preecha a quantidade de pessoas!')
+        apeopleInput.style.border = '2px red solid'
+        empty_error_msg.innerHTML = 'this item can not be empty'
     } else {
+        peopleInput.style.border = 'none'
+        empty_error_msg.innerHTML = ''
+
         percentage5.style.backgroundColor = '#00474B';
         percentage10.style.backgroundColor = '#00474B';
         percentage15.style.backgroundColor = '#00474B';
@@ -95,8 +111,12 @@ percentage25.addEventListener('click', function(){
 
 percentage50.addEventListener('click', function(){
     if (totalPerson.value < 1) {
-        alert('Preecha a quantidade de pessoas!')
+        peopleInput.style.border = '2px red solid'
+        empty_error_msg.innerHTML = 'this item can not be empty'
     } else {
+        peopleInput.style.border = 'none'
+        empty_error_msg.innerHTML = ''
+
         percentage5.style.backgroundColor = '#00474B';
         percentage10.style.backgroundColor = '#00474B';
         percentage15.style.backgroundColor = '#00474B';
@@ -115,8 +135,12 @@ percentage50.addEventListener('click', function(){
 
 percentage100.addEventListener('click', function(){
     if (totalPerson.value < 1) {
-        alert('Preecha a quantidade de pessoas!')
+        peopleInput.style.border = '2px red solid'
+        empty_error_msg.innerHTML = 'this item can not be empty'
     } else {
+        peopleInput.style.border = 'none'
+        empty_error_msg.innerHTML = ''
+        
         percentage5.style.backgroundColor = '#00474B';
         percentage10.style.backgroundColor = '#00474B';
         percentage15.style.backgroundColor = '#00474B';

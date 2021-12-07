@@ -196,6 +196,13 @@ input[type=number] {
     cursor: pointer;
 }
 
+#empty_error_msg {
+    text-align: center;
+    color: red;
+    font-size: 12px;
+    
+}
+
 
 
 
